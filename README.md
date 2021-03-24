@@ -22,9 +22,9 @@ Using ultrasonic sensor we detect the levels of the bin which is mounted inside 
 
 ## Contributors
 
-Aswin Subramanian Manickavasagam-2596691M@student.gla.ac.uk,
-Akhil Bommireddypalli-2584567B@student.gla.ac.uk,
-Karan Rajashekar-2584618R@student.gla.ac.uk.
+1. Aswin Subramanian Manickavasagam-2596691M@student.gla.ac.uk,
+2. Akhil Bommireddypalli-2584567B@student.gla.ac.uk,
+3. Karan Rajashekar-2584618R@student.gla.ac.uk.
 
 
  

@@ -1,19 +1,4 @@
-// async_subscribe.cpp
-//
-// This is a Paho MQTT C++ client, sample application.
-//
-// This application is an MQTT subscriber using the C++ asynchronous client
-// interface, employing callbacks to receive messages and status updates.
-//
-// The sample demonstrates:
-//  - Connecting to an MQTT server/broker.
-//  - Subscribing to a topic
-//  - Receiving messages through the callback API
-//  - Receiving network disconnect updates and attempting manual reconnects.
-//  - Using a "clean session" and manually re-subscribing to topics on
-//    reconnect.
-//
-
+//This is a simple code to test if MQTT_Subscriber is working fine
 /*******************************************************************************
  * Copyright (c) 2013-2020 Frank Pagliughi <fpagliughi@mindspring.com>
  *

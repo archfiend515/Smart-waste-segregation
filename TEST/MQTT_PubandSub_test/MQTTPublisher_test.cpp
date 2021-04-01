@@ -1,19 +1,4 @@
-// async_publish.cpp
-//
-// This is a Paho MQTT C++ client, sample application.
-//
-// It's an example of how to send messages as an MQTT publisher using the
-// C++ asynchronous client interface.
-//
-// The sample demonstrates:
-//  - Connecting to an MQTT server/broker
-//  - Publishing messages
-//  - Default file persistence
-//  - Last will and testament
-//  - Using asynchronous tokens
-//  - Implementing callbacks and action listeners
-//
-
+// This is a simple code to check if MQTT_Publisher is working fine
 /*******************************************************************************
  * Copyright (c) 2013-2020 Frank Pagliughi <fpagliughi@mindspring.com>
  *

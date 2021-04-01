@@ -1,3 +1,5 @@
+//This is a simple code to test speaker and email generation
+
 #include <iostream>
 #include <wiringPi.h>
 #include <stdlib.h>

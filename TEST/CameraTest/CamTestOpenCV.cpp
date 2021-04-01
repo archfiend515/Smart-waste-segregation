@@ -1,3 +1,6 @@
+// This is a simple test code to check the Live streaming from the camera
+
+
 #include "opencv4/opencv2/objdetect.hpp"
 #include "opencv4/opencv2/highgui.hpp"
 #include "opencv4/opencv2/imgproc.hpp"

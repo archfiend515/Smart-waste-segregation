@@ -7,6 +7,7 @@
 #include <thread>
 #include <chrono>
 #include "mqtt_Sub.h"
+#include "UltraSonicSensor/UltraSonicSensor.h"
 
 const std::string SERVER_ADDRESS("test.mosquitto.org");
 const std::string CLIENT_ID("paho_cpp_async_subcribe");
@@ -24,7 +25,8 @@ int main(int argc, char* argv[])
 	// Install the callback before connecting.
 	callback cb(cli, Connect_Optns);
 	cli.set_callback(cb);
-
+	int distance = USensorOp();
+	printf("distance = %d\n", distance);
 	// Initiate the connection. After completion of connection, The Callback function will subscribe to the specified topic
 	try {
 		std::cout << "Connecting to the MQTT server..." << std::flush;

@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<iostream>
 #include<linux/i2c-dev.h>
-#include<i2c/smbus.h>
 #include<unistd.h>
 #include<fcntl.h>
 #include<string.h>
@@ -12,7 +11,7 @@ using namespace std;
 int main()
 {
     int file;
-    string port = "/dev/i2c-1";                                         // I2C port
+    char* port = "/dev/i2c-1";                                         // I2C port
     file = open(port, O_RDWR);
     if (file < 0)
     {

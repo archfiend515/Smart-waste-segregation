@@ -27,7 +27,7 @@
 #include <thread>
 #include <chrono>
 #include "mqtt/async_client.h"
-
+#include "UltraSonicSensor/UltraSonicSensor.h"
 const std::string TOPIC("Face_Detection");
 
 const int	QOS = 1;
@@ -80,7 +80,7 @@ class callback : public virtual mqtt::callback,
 	mqtt::connect_options& ConnectOptions;
 	// An action listener to display the result of actions.
 	action_listener subListener_;
-
+	int mailSent = 0; 
 	// connection success
 	void connected(const std::string& cause) override {
 		std::cout << "\nConnection success" << std::endl;
@@ -124,8 +124,19 @@ class callback : public virtual mqtt::callback,
 	void on_success(const mqtt::token& tok) override {}
 	// Callback for when a message arrives.
 	void message_arrived(mqtt::const_message_ptr msg) override {
+		int dist=USensorOp();
+		if (dist<5){
+		system("espeak-ng 'Bin is Full Please find the nearest bin'");
+		if(mailSent==0){
+		system("echo 'Please Empty the Bin 1' | msmtp -a gmail karan.rajashekar@gmail.com");
+		mailSent=1;
+		}
+		}
+		else{
+		mailSent=0;
 		//system("echo 'Please throw your garbage in the appropriate bin  ' | festival --tts");
 		system("espeak-ng 'Please throw your garbage in the appropriate bin'");
+	}
 		//Email code
 		///level of dutbin
 		std::cout << "Message arrived" << std::endl;

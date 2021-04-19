@@ -1,3 +1,4 @@
+
 # Smart-Waste-Segregation
 
 
@@ -20,6 +21,9 @@ Using ultrasonic sensor we detect the levels of the bin which is mounted inside 
 ## Reference 
 
 1. https://www.raspberrypi.org/
+
+##                                                                   Social Media Profile
+                         ![instagram](https://user-images.githubusercontent.com/41875477/115224985-7aad0580-a105-11eb-84da-f284ae8d4f67.png)
 
 ## Contributors
 

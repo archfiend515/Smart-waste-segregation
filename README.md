@@ -83,6 +83,14 @@ Before building the C++ library, build and install the Paho MQTT C library. Note
  4. $ sudo cmake --build build/ --target install 
 
  5. $ sudo ldconfig
+ 
+ ## Building the pigpio library
+ 
+ 1. $ wget https://github.com/joan2937/pigpio/archive/master.zip
+ 2. $ unzip master.zip
+ 3. $ cd pigpio-master
+ 4. $ make
+ 5. $ sudo make install
 
 
 ## Circuit Diagram

@@ -14,7 +14,8 @@ Using ultrasonic sensor we detect the levels of the bin which is mounted inside 
 1. Raspberry pi 4.
 2. Pi camera.
 3. SRF-02 Ultrasonic sensor.
-4. LED's.
+4. Electromagnetic Lock
+5. LED's.
 
 ## Reference 
 

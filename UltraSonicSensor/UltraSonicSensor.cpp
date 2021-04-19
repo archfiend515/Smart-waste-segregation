@@ -15,7 +15,6 @@
 using namespace std;
 int main()
 {
-    int mailSent=0;
     if (gpioInitialise() < 0) exit(1);
     int file;
     char* port = "/dev/i2c-1";                                         // I2C port

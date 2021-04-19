@@ -10,15 +10,15 @@ We have seen a substantial growth in the amount of waste generated day by day. R
 In order to do that it is important to educate the user For this purpose we design a garbage disposal system that uses multiple dustbins. Face detection is done by the camera interface and with a voice based system that speaks to the user each time he or she stands before the dustbin.
 Using ultrasonic sensor we detect the levels of the bin which is mounted inside the bin. As soon as the level of bin is full a  message is directed over the internet to empty the bin.
 
-## Hardware Used
+# Getting Started
+
+## Hardware Required
 
 1. Raspberry pi 4.
 2. Pi camera.
 3. SRF-02 Ultrasonic sensor.
 4. Electromagnetic Lock
 5. LED's.
-
-### Getting Started
 
 ## Software Setup
 
@@ -30,27 +30,23 @@ Using ultrasonic sensor we detect the levels of the bin which is mounted inside 
 
 ## Installing Dependencies
 
- 1. $ sudo apt-get update 
+ 1. $ sudo apt-get install alsa-utils ( For installing alsa sound utilities) 
 
- 2. $ sudo apt-get upgrade 
+ 2. $ sudo nano /etc/modules (Execute this and add line snd_bcm2835) 
 
- 3. $ sudo apt-get install alsa-utils ( For installing alsa sound utilities) 
+ 3. $ sudo apt-get install mplayer 
 
- 4. $ sudo nano /etc/modules (Execute this and add line snd_bcm2835) 
+ 4. $ sudo apt-get install espeak-ng ( For Text to Speech) 
 
- 5. $ sudo apt-get install mplayer 
+ 5. $ sudo apt-get install msmtp (msmtp package for mail communication ; Remember to copy the .msmptrc file in your home directory) 
 
- 6. $ sudo apt-get install espeak-ng ( For Text to Speech) 
+ 6. $ sudo apt-get install msmtp-mta ( Add your email id and password in .msmptrc file) 
 
- 7. $ sudo apt-get install msmtp (msmtp package for mail communication ; Remember to copy the .msmptrc file in your home directory) 
+ 7. $ sudo apt-get install build-essential gcc make cmake cmake-gui cmake-curses-gui 
 
- 8. $ sudo apt-get install msmtp-mta ( Add your email id and password in .msmptrc file) 
+ 8. $ sudo apt-get install libssl-dev 
 
- 9. $ sudo apt-get install build-essential gcc make cmake cmake-gui cmake-curses-gui 
-
- 10. $ sudo apt-get install libssl-dev 
-
- 11. $ sudo apt-get install doxygen graphviz (For installing doxygen and graphviz) 
+ 9. $ sudo apt-get install doxygen graphviz (For installing doxygen and graphviz) 
 
 ## Build And Install MQTT Library
 
@@ -70,7 +66,7 @@ Before building the C++ library, build and install the Paho MQTT C library. Note
 
  6. $ sudo ldconfig 
 
-## Building the Paho C++ library
+### Building the Paho C++ library
  
  1. $ git clone https://github.com/eclipse/paho.mqtt.cpp 
 
@@ -98,26 +94,29 @@ In the terminal,
 ![circuit diagram](https://user-images.githubusercontent.com/41875477/115230062-bf3b9f80-a10b-11eb-9585-4cddc4697b9d.png)
 
 
-## References
+# References
 
-# MQTT
+## MQTT
 1. https://github.com/eclipse/paho.mqtt.cpp 
 2. http://www.steves-internet-guide.com/mqtt/ 
 
-# Open CV/Face Detection
+## Open CV/Face Detection
 1. https://docs.opencv.org/4.5.1/db/d28/tutorial_cascade_classifier.html 
 2. https://docs.opencv.org/3.4/d4/d26/samples_2cpp_2facedetect_8cpp-example.html#_a2 
 3. https://www.rs-online.com/designspark/beginners-guide-to-computer-vision-with-raspberry-pi-4 
 
-# Others
-1. https://www.raspberrypi.org/
-2. https://www.kernel.org/doc/Documentation/i2c/dev-interface
-3. https://github.com/espeak-ng/espeak-ng 
-4. https://wiki.archlinux.org/index.php/Msmtp 
-5. https://www.gnu.org/software/libc/manual/html_node/ Termination-Signals.html 
+## I2C and piGPIO access
+1. https://www.kernel.org/doc/Documentation/i2c/dev-interface
+2. http://abyz.me.uk/rpi/pigpio/download.html
 
-##                                                                   Social Media Profiles
-[![github](https://user-images.githubusercontent.com/41875477/115228747-10e32a80-a10a-11eb-828e-b4150430b2b5.png)][1]    [![github](https://user-images.githubusercontent.com/41875477/115229474-01b0ac80-a10b-11eb-8a55-381cee2859ed.png)][2]
+## Others
+1. https://www.raspberrypi.org/
+2. https://github.com/espeak-ng/espeak-ng 
+3. https://wiki.archlinux.org/index.php/Msmtp 
+4. https://www.gnu.org/software/libc/manual/html_node/Termination-Signals.html 
+
+## Social Media Profiles
+[![github](https://user-images.githubusercontent.com/41875477/115228747-10e32a80-a10a-11eb-828e-b4150430b2b5.png)][1]     [![github](https://user-images.githubusercontent.com/41875477/115229474-01b0ac80-a10b-11eb-8a55-381cee2859ed.png)][2]
 
 ## Contributors
 

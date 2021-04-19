@@ -42,7 +42,7 @@ Using ultrasonic sensor we detect the levels of the bin which is mounted inside 
 
  6. $ sudo apt-get install espeak-ng ( For Text to Speech) 
 
- 7. $ sudo apt-get install msmtp (msmtp package for mail communication) 
+ 7. $ sudo apt-get install msmtp (msmtp package for mail communication ; Remember to copy the .msmptrc file in your home directory) 
 
  8. $ sudo apt-get install msmtp-mta ( Add your email id and password in .msmptrc file) 
 
@@ -90,7 +90,10 @@ Before building the C++ library, build and install the Paho MQTT C library. Note
  4. $ make
  5. $ sudo make install
 
-
+## Running the Code
+In the terminal,
+1. Move to the project directory
+2. Execute the file rtep.py - Command : python rtep.py
 ## Circuit Diagram
 ![circuit diagram](https://user-images.githubusercontent.com/41875477/115230062-bf3b9f80-a10b-11eb-9585-4cddc4697b9d.png)
 
@@ -114,7 +117,7 @@ Before building the C++ library, build and install the Paho MQTT C library. Note
 5. https://www.gnu.org/software/libc/manual/html_node/ Termination-Signals.html 
 
 ##                                                                   Social Media Profiles
-[![github](https://user-images.githubusercontent.com/41875477/115228747-10e32a80-a10a-11eb-828e-b4150430b2b5.png)][1] [![github](https://user-images.githubusercontent.com/41875477/115229474-01b0ac80-a10b-11eb-8a55-381cee2859ed.png)][2]
+[![github](https://user-images.githubusercontent.com/41875477/115228747-10e32a80-a10a-11eb-828e-b4150430b2b5.png)][1]    [![github](https://user-images.githubusercontent.com/41875477/115229474-01b0ac80-a10b-11eb-8a55-381cee2859ed.png)][2]
 
 ## Contributors
 

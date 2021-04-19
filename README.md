@@ -4,7 +4,7 @@
 
 ![alt text](https://assets.telegraphindia.com/telegraph/9ca10d94-d495-48ec-be03-09186c3158aa.jpg)
 
-## About the project
+# About the project
 
 We have seen a substantial growth in the amount of waste generated day by day. Recycling is the only way to reduce the amount of waste generated for the recycling to done it is important tht first the waste must be segregated first because recycling process differs.
 In order to do that it is important to educate the user For this purpose we design a garbage disposal system that uses multiple dustbins. Face detection is done by the camera interface and with a voice based system that speaks to the user each time he or she stands before the dustbin.
@@ -22,7 +22,7 @@ Using ultrasonic sensor we detect the levels of the bin which is mounted inside 
 
 ## Software Setup
 
- 1. https://maker.pro/raspberry-pi/projects/  how-to-connect-a-raspberry-pi-to-a-laptop-display - For Connecting to Pi from your Laptop 
+ 1. https://maker.pro/raspberry-pi/projects/          how-to-connect-a-raspberry-pi-to-a-laptop-display - For Connecting to Pi from your Laptop 
 
  2. https://qengineering.eu/install-opencv-4.4-on-raspberry-pi-4.html - Follow the steps in this link for installing OpenCV 4. (Virtual Environment part is not required for c++) 
 
@@ -30,7 +30,7 @@ Using ultrasonic sensor we detect the levels of the bin which is mounted inside 
 
 ## Installing Dependencies
 
- 1. $ sudo apt-get install alsa-utils ( For installing alsa sound utilities) 
+ 1. $ sudo apt-get install alsa-utils (For installing alsa sound utilities) 
 
  2. $ sudo nano /etc/modules (Execute this and add line snd_bcm2835) 
 
@@ -46,7 +46,9 @@ Using ultrasonic sensor we detect the levels of the bin which is mounted inside 
 
  8. $ sudo apt-get install libssl-dev 
 
- 9. $ sudo apt-get install doxygen graphviz (For installing doxygen and graphviz) 
+ 9. $ sudo apt-get install doxygen graphviz (For installing doxygen and graphviz)
+
+ Note: Install the dependencies only which are not installed on your previously 
 
 ## Build And Install MQTT Library
 
@@ -92,6 +94,7 @@ In the terminal,
 2. Execute the file rtep.py - Command : python rtep.py
 ## Circuit Diagram
 ![circuit diagram](https://user-images.githubusercontent.com/41875477/115230062-bf3b9f80-a10b-11eb-9585-4cddc4697b9d.png)
+
 
 
 # References

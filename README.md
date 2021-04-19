@@ -30,8 +30,6 @@ Using ultrasonic sensor we detect the levels of the bin which is mounted inside 
 
 ## Installing Dependencies
 
-INSTALLING DEPENDENCIES: 
-
  1. $ sudo apt-get update 
 
  2. $ sudo apt-get upgrade 
@@ -72,7 +70,7 @@ Before building the C++ library, build and install the Paho MQTT C library. Note
 
  6. $ sudo ldconfig 
 
-# Building the Paho C++ library
+## Building the Paho C++ library
  
  1. $ git clone https://github.com/eclipse/paho.mqtt.cpp 
 

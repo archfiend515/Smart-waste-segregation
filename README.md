@@ -18,6 +18,11 @@ Using ultrasonic sensor we detect the levels of the bin which is mounted inside 
 4. Electromagnetic Lock
 5. LED's.
 
+
+## Circuit Diagram
+![circuit diagram](https://user-images.githubusercontent.com/41875477/115230062-bf3b9f80-a10b-11eb-9585-4cddc4697b9d.png)
+
+
 ## Reference 
 
 1. https://www.raspberrypi.org/

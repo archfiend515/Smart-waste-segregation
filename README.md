@@ -1,3 +1,4 @@
+
 # Smart-Waste-Segregation
 
 
@@ -17,9 +18,17 @@ Using ultrasonic sensor we detect the levels of the bin which is mounted inside 
 4. Electromagnetic Lock
 5. LED's.
 
+
+## Circuit Diagram
+![circuit diagram](https://user-images.githubusercontent.com/41875477/115230062-bf3b9f80-a10b-11eb-9585-4cddc4697b9d.png)
+
+
 ## Reference 
 
 1. https://www.raspberrypi.org/
+
+##                                                                   Social Media Profiles
+[![github](https://user-images.githubusercontent.com/41875477/115228747-10e32a80-a10a-11eb-828e-b4150430b2b5.png)][1] [![github](https://user-images.githubusercontent.com/41875477/115229474-01b0ac80-a10b-11eb-8a55-381cee2859ed.png)][2]
 
 ## Contributors
 
@@ -29,3 +38,5 @@ Using ultrasonic sensor we detect the levels of the bin which is mounted inside 
 
 
  
+[1]: https://www.instagram.com/smart_waste_segregation/
+[2]: https://www.facebook.com/SmartWasteSegregation/

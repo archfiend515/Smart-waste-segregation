@@ -23,8 +23,7 @@ Using ultrasonic sensor we detect the levels of the bin which is mounted inside 
 1. https://www.raspberrypi.org/
 
 ##                                                                   Social Media Profile
-[![github](https://user-images.githubusercontent.com/41875477/115228747-10e32a80-a10a-11eb-828e-b4150430b2b5.png)][1][![instagram](https://www.instagram.com/smart_waste_segregation/)]
-
+[![github](https://user-images.githubusercontent.com/41875477/115228747-10e32a80-a10a-11eb-828e-b4150430b2b5.png)][1]
 ## Contributors
 
 1. Aswin Subramanian Manickavasagam -2596691M@student.gla.ac.uk,
@@ -33,3 +32,4 @@ Using ultrasonic sensor we detect the levels of the bin which is mounted inside 
 
 
  
+[1]: https://www.instagram.com/smart_waste_segregation/

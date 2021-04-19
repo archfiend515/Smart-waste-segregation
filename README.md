@@ -100,7 +100,7 @@ Before building the C++ library, build and install the Paho MQTT C library. Note
 2. https://docs.opencv.org/3.4/d4/d26/samples_2cpp_2facedetect_8cpp-example.html#_a2 
 3. https://www.rs-online.com/designspark/beginners-guide-to-computer-vision-with-raspberry-pi-4 
 
-# others
+# Others
 1. https://www.raspberrypi.org/
 2. https://www.kernel.org/doc/Documentation/i2c/dev-interface
 3. https://github.com/espeak-ng/espeak-ng 

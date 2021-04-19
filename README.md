@@ -48,7 +48,7 @@ Using ultrasonic sensor we detect the levels of the bin which is mounted inside 
 
  9. $ sudo apt-get install doxygen graphviz (For installing doxygen and graphviz)
 
- Note: Install the dependencies only which are not installed on your previously 
+ Note: Install only those dependencies  which are not already there on your pi 
 
 ## Build And Install MQTT Library
 

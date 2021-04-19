@@ -1,15 +1,22 @@
 #include<stdio.h>
 #include<iostream>
 #include<linux/i2c-dev.h>
+#include<pigpio.h>
 #include<unistd.h>
 #include<fcntl.h>
 #include<string.h>
 #include<sys/ioctl.h>
 #include<sys/types.h>
 #include<sys/stat.h>
+#include<stdlib.h>
+#define lock 26
+#define HIGH 0x1
+#define LOW 0x0
 using namespace std;
 int main()
 {
+    int mailSent=0;
+    if (gpioInitialise() < 0) exit(1);
     int file;
     char* port = "/dev/i2c-1";                                         // I2C port
     file = open(port, O_RDWR);
@@ -29,7 +36,7 @@ int main()
     while(1)
     {
     buff[0] = 0;                                                        // Software Version
-    buff[1] = 81;                                                       // Distance in Centimeters, for inchs buff[1]=80
+    buff[1] = 80;                                                       // Distance in Centimeters, for inchs buff[1]=80
 
     if ((write(file, buff, 2)) != 2) {
         printf("unable to write to i2c device\n");
@@ -55,13 +62,18 @@ int main()
         int distance = highByte;
         distance <<= 8;                                                  //Left shift bitwise 8 times 
         distance = distance + lowByte;                                   //Total distance
-        printf("Distance: %d\n", distance);
+        printf("Space Left:%d in\n", distance);
+		if(distance <=7){
+		gpioWrite(lock, HIGH);
+		}
+
+	
     }
 }
 
     close(file);
 
-
+	gpioTerminate();
     return 0;
 }
 

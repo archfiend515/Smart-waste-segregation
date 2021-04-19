@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<iostream>
+#include <pigpio.h>
 #include<linux/i2c-dev.h>
 #include<unistd.h>
 #include<fcntl.h>
@@ -7,10 +8,12 @@
 #include<sys/ioctl.h>
 #include<sys/types.h>
 #include<sys/stat.h>
+#define lock 26
+#define HIGH 0x1
+#define LOW 0x0
 using namespace std;
 int USensorOp()
 {
-    printf("Ultrasonic Sensor Running\n");
     int file;
     char* port = "/dev/i2c-1";                                         // I2C port
     file = open(port, O_RDWR);
@@ -30,7 +33,7 @@ int USensorOp()
     while(1)
     {
     buff[0] = 0;                                                        // Software Version
-    buff[1] = 81;                                                       // Distance in Centimeters, for inchs buff[1]=80
+    buff[1] = 80;                                                       // Distance in Centimeters, for inchs buff[1]=80
 
     if ((write(file, buff, 2)) != 2) {
         printf("unable to write to i2c device\n");
@@ -56,7 +59,11 @@ int USensorOp()
         int distance = highByte;
         distance <<= 8;                                                  //Left shift bitwise 8 times 
         distance = distance + lowByte;                                   //Total distance
-        printf("Distance: %d\n", distance);
+        printf("Space Left: %d in\n", distance);
+        /*if(distance < 5){
+        printf("Lock Working");
+		gpioWrite(lock, HIGH);
+        }*/
         return distance;
         
     }

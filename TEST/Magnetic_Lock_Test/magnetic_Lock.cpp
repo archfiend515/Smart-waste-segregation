@@ -1,5 +1,5 @@
 #include <pigpio.h>
-
+#include <iostream>
 #define LED 4
 #define lock 26
 #define HIGH 0x1
@@ -11,14 +11,16 @@ int main()
 	gpioSetMode(LED, PI_OUTPUT);
 	gpioSetMode(lock, PI_OUTPUT);
 	
-	distance = 10;
+	distance = 0;
 	if (distance > 1)
 	{
+		
 		gpioWrite(LED, HIGH);
 		gpioWrite(lock, LOW);
 	}
 	else
 	{
+		printf("Lock Working");
 		gpioWrite(LED, LOW);
 		gpioWrite(lock, HIGH); 
 

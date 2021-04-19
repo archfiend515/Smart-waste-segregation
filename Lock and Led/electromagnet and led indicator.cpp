@@ -1,23 +1,27 @@
-#include<wiringpi.h>
+#include <pigpio.h>
+
+#define LED 4
+#define lock 26
+#define HIGH 0x1
+#define LOW 0x0
 int main()
 {
+	if (gpioInitialise() < 0) exit(1);
 	int distance;
-	int led = 4;
-	int lock = 26;
-	wiringPiSetup();
-	pinMode(led, OUTPUT);
-	pinMode(lock, OUTPUT);
+	gpioSetMode(LED, PI_OUTPUT);
+	gpioSetMode(lock, PI_OUTPUT);
+	
 	distance = 10;
 	if (distance > 1)
 	{
-		digitalWrite(led, HIGH);
-		digitalWrite(lock, LOW);
+		gpioWrite(LED, HIGH);
+		gpioWrite(lock, LOW);
 	}
 	else
 	{
-		digitalWrite(led, LOW);
-		digitalWrite(lock, HIGH);
+		gpioWrite(LED, LOW);
+		gpioWrite(lock, HIGH); 
 
 	}
-
+	gpioTerminate();
 }

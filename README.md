@@ -22,7 +22,7 @@ Using ultrasonic sensor we detect the levels of the bin which is mounted inside 
 
 ## Software Setup
 
- 1. https://maker.pro/raspberry-pi/projects/          how-to-connect-a-raspberry-pi-to-a-laptop-display - For Connecting to Pi from your Laptop 
+ 1. https://maker.pro/raspberry-pi/projects/how-to-connect-a-raspberry-pi-to-a-laptop-display - For Connecting to Pi from your Laptop 
 
  2. https://qengineering.eu/install-opencv-4.4-on-raspberry-pi-4.html - Follow the steps in this link for installing OpenCV 4. (Virtual Environment part is not required for c++) 
 
@@ -131,3 +131,5 @@ In the terminal,
  
 [1]: https://www.instagram.com/smart_waste_segregation/
 [2]: https://www.facebook.com/SmartWasteSegregation/
+
+
